@@ -1,0 +1,18 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Retro Gaming";
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Retro Gaming";
+  src: url("../fonts/retro_gaming.ttf") format("truetype");
+}
