@@ -36,3 +36,7 @@ h2,
 h3 {
   font-family: var(--heading-font);
 }
+
+p {
+  line-height: 1.75;
+}
