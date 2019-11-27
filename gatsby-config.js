@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/velox-web",
   siteMetadata: {
     title: `Velox`,
     description: `Website for the game Velox, created for the course DH2650 Computer Game Design.`,
