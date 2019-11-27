@@ -11,7 +11,7 @@
 .memberImg {
   max-width: 80%;
   border-radius: 50%;
-  margin-bottom: 0.5em;
+  margin: 0 auto 0.75em auto;
 }
 
 .memberName {
