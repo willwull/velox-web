@@ -1,0 +1,23 @@
+.membersGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.member {
+  text-align: center;
+}
+
+.memberImg {
+  max-width: 80%;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+.memberName {
+  font-size: 1.2em;
+}
+
+.memberRole {
+  opacity: 0.5;
+}

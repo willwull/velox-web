@@ -1,0 +1,12 @@
+.section {
+  padding: 1em;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}

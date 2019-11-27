@@ -1,12 +1,16 @@
 import React from "react"
 import SEO from "../components/seo"
-import VeloxLogo from "../images/logo.png"
+import Header from "../components/Header"
+import Layout from "../components/Layout"
+import Section from "../components/Section"
+import TeamSection from "../components/TeamSection"
 
 const IndexPage = () => (
-  <main>
+  <Layout>
     <SEO title="Home" />
-    <img src={VeloxLogo} alt="Velox logo" />
-  </main>
+    <Header />
+    <TeamSection />
+  </Layout>
 )
 
 export default IndexPage

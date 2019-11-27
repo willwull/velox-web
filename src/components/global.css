@@ -16,3 +16,7 @@ html {
   font-family: "Retro Gaming";
   src: url("../fonts/retro_gaming.ttf") format("truetype");
 }
+
+img {
+  max-width: 100%;
+}
