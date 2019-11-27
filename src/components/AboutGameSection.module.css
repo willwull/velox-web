@@ -2,6 +2,8 @@
   /* 16:9 ratio */
   padding-top: 56.25%;
   position: relative;
+
+  margin-bottom: 2em;
 }
 
 .video {

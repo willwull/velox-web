@@ -17,6 +17,13 @@ function AboutGameSection() {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         ></iframe>
       </div>
+
+      <p>
+        Velox is a new free to play 2D arena shooter, filled with hectic action
+        and crazy weapons. The game features several game modes and maps,
+        ranging from simple Death Match to our own custom made mode called Base
+        Shooting.
+      </p>
     </Section>
   )
 }
