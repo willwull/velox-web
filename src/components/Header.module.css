@@ -1,6 +1,6 @@
 .container {
   height: 100vh;
-  background-color: #251531;
+  background-color: var(--primary-dark);
   background: url("../images/caveBg.png");
   background-size: cover;
   background-position: center;

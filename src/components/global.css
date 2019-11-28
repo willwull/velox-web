@@ -11,6 +11,8 @@
 :root {
   --body-font: "Minecraftia";
   --heading-font: "Retro Gaming";
+
+  --primary-dark: #251531;
 }
 
 body,
@@ -32,9 +34,12 @@ img {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: var(--heading-font);
+}
+
+h2 {
+  font-size: 1.25em;
 }
 
 p {

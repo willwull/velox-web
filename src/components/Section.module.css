@@ -3,6 +3,15 @@
   margin-bottom: 1em;
 }
 
+.inverted {
+  background: var(--primary-dark);
+  color: white;
+}
+
+.inverted p {
+  color: #daaecd;
+}
+
 .section h1 {
   text-align: center;
 }
