@@ -76,7 +76,7 @@ function TeamSection() {
   ]
 
   return (
-    <Section name={"The team"}>
+    <Section name="The team">
       <div className={styles.membersGrid}>
         {team.map(member => (
           <div className={styles.member} key={member.name}>

@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+}
+
+.scrollerContainer {
+  gap: 1em;
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: repeat(6, 33%);
+  overflow-x: auto;
+  height: 360px;
+}
+
+.container:not(.atEnd) .endOverlay,
+.container:not(.atStart) .startOverlay {
+  opacity: 1;
+}
+
+.startOverlay,
+.endOverlay {
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 300ms;
+  z-index: 9;
+}
+
+.startOverlay {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    white 80%,
+    white 100%
+  );
+  left: 0;
+}
+
+.endOverlay {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    white 80%,
+    white 100%
+  );
+  right: 0;
+}
+
+.endPadding {
+  width: 1px;
+}

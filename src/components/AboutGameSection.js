@@ -4,7 +4,7 @@ import styles from "./AboutGameSection.module.css"
 
 function AboutGameSection() {
   return (
-    <Section name={"About the game"} inverted>
+    <Section name="About the game" inverted>
       <div className={styles.features}>
         <div>
           <h2>Fun gameplay</h2>

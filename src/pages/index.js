@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import TeamSection from "../components/TeamSection"
 import AboutGameSection from "../components/AboutGameSection"
 import VideoSection from "../components/VideoSection"
+import ScreenshotsSection from "../components/ScreenshotsSection"
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Header />
     <VideoSection />
     <AboutGameSection />
+    <ScreenshotsSection />
     <TeamSection />
   </Layout>
 )

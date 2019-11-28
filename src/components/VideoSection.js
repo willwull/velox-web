@@ -7,7 +7,7 @@ const VIDEO_URL = "https://www.youtube.com/embed/GKXS_YA9s7E"
 
 function VideoSection() {
   return (
-    <Section name={"Video demo"}>
+    <Section name="Video demo">
       <div className={styles.videoContainer}>
         <iframe
           src={VIDEO_URL}

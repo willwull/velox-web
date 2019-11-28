@@ -5,6 +5,6 @@
  * @param  {...any} args
  */
 export function classnames(...args) {
-  const classes = args.filter(arg => arg != null)
+  const classes = args.filter(arg => arg != null && arg !== false)
   return classes.join(" ")
 }

@@ -3,6 +3,11 @@
   margin-bottom: 1em;
 }
 
+.section.fullWidth {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .inverted {
   background: var(--primary-dark);
   color: white;
