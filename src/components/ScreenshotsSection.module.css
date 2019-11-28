@@ -3,12 +3,22 @@
 }
 
 .scrollerContainer {
+  --width: 640px;
+  --height: 360px;
+
   gap: 1em;
   padding: 0 1em;
   display: grid;
-  grid-template-columns: repeat(6, 33%);
+  height: var(--height);
+  grid-template-columns: repeat(6, var(--width));
   overflow-x: auto;
-  height: 360px;
+}
+
+@media screen and (max-width: 640px) {
+  .scrollerContainer {
+    --width: 320px;
+    --height: 180px;
+  }
 }
 
 .container:not(.atEnd) .endOverlay,
