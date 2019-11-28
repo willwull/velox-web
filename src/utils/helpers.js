@@ -8,3 +8,14 @@ export function classnames(...args) {
   const classes = args.filter(arg => arg != null && arg !== false)
   return classes.join(" ")
 }
+
+export default function createDebouncedFunc(fn, time = 100) {
+  let timeout
+
+  return function() {
+    const functionCall = () => fn.apply(this, arguments)
+
+    clearTimeout(timeout)
+    timeout = setTimeout(functionCall, time)
+  }
+}
