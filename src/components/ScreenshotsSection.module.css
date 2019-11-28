@@ -35,6 +35,7 @@
   opacity: 0;
   transition: opacity 300ms;
   z-index: 9;
+  pointer-events: none;
 }
 
 .startOverlay {

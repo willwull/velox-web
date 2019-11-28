@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Section from "./Section"
 import styles from "./ScreenshotsSection.module.css"
-import createDebouncedFunc, { classnames } from "../utils/helpers"
+import { classnames, throttle } from "../utils/helpers"
 
 function ScreenshotsSection() {
   const data = useStaticQuery(graphql`
@@ -30,7 +30,7 @@ function ScreenshotsSection() {
   const [hasReachedEnd, setHasReachedEnd] = useState(false)
   const scrollRef = useRef()
 
-  const onScroll = createDebouncedFunc(event => {
+  const onScroll = throttle(event => {
     const elem = scrollRef.current
     const hasScrolledToStart = elem.scrollLeft <= 0
     const hasScrolledToEnd =

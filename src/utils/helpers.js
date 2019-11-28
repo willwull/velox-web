@@ -9,13 +9,14 @@ export function classnames(...args) {
   return classes.join(" ")
 }
 
-export default function createDebouncedFunc(fn, time = 100) {
-  let timeout
-
-  return function() {
-    const functionCall = () => fn.apply(this, arguments)
-
-    clearTimeout(timeout)
-    timeout = setTimeout(functionCall, time)
+export function throttle(fn, time = 100) {
+  let inThrottle = null
+  return (...args) => {
+    if (inThrottle == null) {
+      fn(...args)
+      inThrottle = setTimeout(() => {
+        inThrottle = null
+      })
+    }
   }
 }
