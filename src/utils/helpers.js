@@ -9,14 +9,32 @@ export function classnames(...args) {
   return classes.join(" ")
 }
 
-export function throttle(fn, time = 100) {
-  let inThrottle = null
-  return (...args) => {
-    if (inThrottle == null) {
-      fn(...args)
-      inThrottle = setTimeout(() => {
-        inThrottle = null
-      })
+/**
+ * Creates a throttled version of a given function.
+ * Source: https://gist.github.com/beaucharman/e46b8e4d03ef30480d7f4db5a78498ca
+ *
+ * @param {*} callback
+ * @param {number} wait
+ * @param {boolean} immediate
+ */
+export function throttle(callback, wait = 300, immediate = false) {
+  let timeout = null
+  let initialCall = true
+
+  return function() {
+    const callNow = immediate && initialCall
+    const next = () => {
+      callback.apply(this, arguments)
+      timeout = null
+    }
+
+    if (callNow) {
+      initialCall = false
+      next()
+    }
+
+    if (!timeout) {
+      timeout = setTimeout(next, wait)
     }
   }
 }
