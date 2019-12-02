@@ -5,6 +5,20 @@ import styles from "./AboutGameSection.module.css"
 function AboutGameSection() {
   return (
     <Section name="About the game" inverted>
+      <div className={styles.storySummary}>
+        <p>
+          In the year 3019, Earth has been destroyed and humanity must find a
+          new planet to inhabit. A group of explorers have found an alien planet
+          called Velox.
+        </p>
+
+        <p>
+          However, rival factions have also found the same planet, and the
+          planet isn't big enough for everyone, so they must battle each other
+          to decide who gets to claim Velox.
+        </p>
+      </div>
+
       <div className={styles.features}>
         <div>
           <h2>Fun gameplay</h2>
