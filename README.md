@@ -22,8 +22,6 @@ $ npm start
 
 The above command will run a local web server on port 8000, so you can see the website at `http://localhost:8000`.
 
-### Deploy to Github pages
+## Deploying
 
-```
-$ npm run deploy
-```
+This repo is configured to deploy to Netlify (https://velox.netlify.com/) automatically when a new commit is pushed to the master branch.
