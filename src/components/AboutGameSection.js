@@ -31,8 +31,8 @@ function AboutGameSection() {
         <div>
           <h2>Every match is unique</h2>
           <p>
-            Velox has many game modes and also different maps with unique
-            gameplay mechanics such jetpacks.
+            Velox has many game modes and also different maps with fun
+            gameplay mechanics such jetpacks and tons of weapons.
           </p>
         </div>
 
