@@ -30,7 +30,7 @@
 .endOverlay {
   position: absolute;
   top: 0;
-  width: 10%;
+  width: 5%;
   height: 100%;
   opacity: 0;
   transition: opacity 300ms;
@@ -42,8 +42,7 @@
   background: linear-gradient(
     270deg,
     rgba(255, 255, 255, 0) 0%,
-    white 80%,
-    white 100%
+    rgba(255, 255, 255, 0.9) 100%
   );
   left: 0;
 }
@@ -52,8 +51,7 @@
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
-    white 80%,
-    white 100%
+    rgba(255, 255, 255, 0.9) 100%
   );
   right: 0;
 }
