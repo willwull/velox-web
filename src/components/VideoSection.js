@@ -2,8 +2,7 @@ import React from "react"
 import Section from "./Section"
 import styles from "./VideoSection.module.css"
 
-// TODO: Placeholder until we have an actual video for our game
-const VIDEO_URL = "https://www.youtube.com/embed/GKXS_YA9s7E"
+const VIDEO_URL = "https://drive.google.com/file/d/12P9KY75A4cs9uLOv-q4NVRuHXhGAMKfZ/preview"
 
 function VideoSection() {
   return (
